@@ -1,0 +1,147 @@
+:root {
+  --ocean-dark: #003049;
+  --ocean-mid: #0077b6;
+  --ocean-light: #caf0f8;
+  --ocean-sand: #f8f9fa;
+  --text-dark: #102a43;
+  --text-light: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--ocean-sand);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--ocean-dark), var(--ocean-mid));
+  color: var(--text-light);
+  padding: 4rem 1rem 3rem 1rem;
+  text-align: center;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid var(--ocean-light);
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+  margin-top: 1rem;
+}
+
+.highlight {
+  color: var(--ocean-light);
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--ocean-light);
+  color: var(--ocean-dark);
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  margin: 0.3rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--text-light);
+  color: var(--ocean-mid);
+  transform: translateY(-2px);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid var(--ocean-light);
+  color: var(--ocean-light);
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  border-bottom: 3px solid var(--ocean-mid);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  color: var(--ocean-dark);
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.card-content {
+  padding: 1rem 1.2rem;
+  flex: 1;
+}
+
+.tools {
+  color: #5b7080;
+  font-size: 0.9rem;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skills li {
+  background: var(--ocean-light);
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  font-weight: 500;
+}
+
+footer {
+  background: var(--ocean-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 700px) {
+  .card {
+    flex-direction: column;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+  }
+}
